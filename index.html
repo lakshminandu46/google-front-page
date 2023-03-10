@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOOGLE</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d898a35d28.js" crossorigin="anonymous"></script>
+    <style>
+        header{
+            text-align: right;
+            padding-right: 15px;
+        }
+        a:link{
+            text-decoration: none;
+            color: black;
+        }
+        a:visited{
+            color: rgb(8, 8, 8);
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        .main-bar{
+            margin-right: 20px;
+            font-family: Arial, sans-serif;
+        }
+        #dropdown{
+            margin-right: 20px;
+            margin-bottom: 10px;
+            position: relative;
+            top:6px;
+        }
+        #dropdown:hover{
+            cursor: pointer;
+        }
+        #google-logo{
+            width: 300px;
+        }
+        main{
+            text-align: center;
+            position: relative;
+        }
+        section{
+            text-align: center;
+            position: relative;
+            top:170px;
+        }
+        #search-div{
+            position: relative;
+        }
+        #voice-logo{
+            position: absolute;
+            right: 330px;
+            top:5px;
+            height: 33px;
+        }
+        #search-bar{
+            width: 582px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            padding: 14px;
+            outline: none;
+        }
+        #search-bar:hover{
+            box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+            border-color: rgba(223, 225, 229, 0);
+        }
+        #search-bar:focus{
+            box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+            border-color: rgba(223, 225, 229, 0);
+        }
+        .button{
+        background-color: #f2f2f2;
+        color: #5F6368;
+        font-size: 14px;
+        border: none;
+        padding: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+        }
+        #bottom-buttons{
+            position: relative;
+            top:20px;
+        }
+        .button:hover{
+           border: 1px solid rgb(173, 172, 172);
+           box-shadow: 0px 1px 0px grey;
+       }
+       #appcard{
+           padding: 28px;
+           width: 275px;
+           height: 190px;
+           box-shadow: 0px 0px 5px grey;
+           border: 1px solid #ccc;
+           position: absolute;
+           right: 65px;
+           display: none;
+        }
+        #dropdown-wrapper{
+            display: inline-block;
+        }
+        #dropdown-wrapper:hover #appcard{
+            display: block;
+        }
+       .app-image{
+           width:50px;
+           height: 50px;
+       }
+       .app-display{
+        display: inline-block;
+        width: 84px;
+        text-align: center;
+       }
+       .app-display:hover{
+           cursor: pointer;
+           border: 1px solid rgba(0, 0, 0, 0.2);
+           box-shadow: 0px 0px 3px grey;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="main-bar" href="#">Gmail</a>
+            <a class="main-bar" href="#">Images</a>
+            <div id="dropdown-wrapper">
+                <i id="dropdown" class="material-icons">apps</i>
+                <div id="appcard">
+                    <div class="app-display">
+                        <img src="https://pluspng.com/img-png/google-logo-png-open-2000.png" alt="google search" class="app-image">
+                        <p>Search</p>
+                    </div>
+                    <div class="app-display">
+                        <img src="https://pluspng.com/img-png/google-maps-png-google-maps-icon-1600.png" alt="maps" class="app-image">
+                        <p>Maps</p>
+                    </div>
+                    <div class="app-display">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png" alt="Drive" class="app-image">
+                        <p>Drive</p>
+                    </div>
+                    <div class="app-display">
+                        <img src="https://download.logo.wine/logo/Google_Calendar/Google_Calendar-Logo.wine.png" alt="calender" class="app-image" style="width: 75px;">
+                        <p>Calender</p>
+                    </div>
+                    <div class="app-display">
+                        <img src="https://blogs.acu.edu/innovation_foundry/files/2017/06/google_photos1600.png" alt="Photos" class="app-image">
+                        <p>Photos</p>
+                    </div>
+                    <div class="app-display">
+                        <img src="https://i.pinimg.com/originals/09/96/92/099692d1d651d51b7caf3040fce0f748.png" alt="keep" class="app-image">
+                        <p>Keep</p>
+                    </div>
+                </div>
+            </div>
+            <i class="fa-solid fa-user" id="profile"></i>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google-logo" id="google-logo">
+            <form>
+                <div id="search-div">
+                    <input id="search-bar" type="text" name="search-box" >
+                    <img src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png" alt="voice-search" id="voice-logo">
+                </div>
+                <div id="bottom-buttons">
+                    <input type="button" name="google-search" value="Google Search" class="button" >
+                    <input type="button" name="Im feeling lucky" value="I'm Feeling Lucky" class="button">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
